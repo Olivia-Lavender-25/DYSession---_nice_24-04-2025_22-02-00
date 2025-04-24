@@ -27,7 +27,7 @@ let totalDuration = j.reduce((acc, j) => {
 
 let totalN = Math.ceil(j.length / 50)
 
-let N = 0, inc = 50
+let N = 0, inc = 10
 let start = N * inc, end = (N + 1) * inc
 
 
@@ -104,7 +104,7 @@ let J = j.slice(start, end).map((j, i) => {
                 // console.log(i + 1, fnObj)
                 allFnObjs.push(fnObj)
                 state.json && r()
-            }, state.json ? 0 : 3000 * i);
+            }, state.json ? 0 : 450 * i);
 
         })
 
